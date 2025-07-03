@@ -1,0 +1,85 @@
+<section id="contact" class="min-h-screen px-6 md:px-20 py-20 bg-white text-gray-800">
+
+  <!-- Section Title -->
+  <div class="mb-10">
+    <button class="bg-black text-white px-4 py-1 rounded text-sm">CONTACT</button>
+  </div>
+
+  <!-- Layout: Info + Form -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    
+    <!-- Contact Info Boxes -->
+<div class="space-y-6">
+  <!-- Email Box -->
+  <div class="border rounded-lg p-6 shadow-sm">
+    <h4 class="font-semibold text-lg mb-1 flex items-center gap-2">
+      <svg class="w-5 h-5" fill="#D14836" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.5 4A2.5 2.5 0 0 0 0 6.5v11A2.5 2.5 0 0 0 2.5 20h19a2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 21.5 4h-19zM1.8 6.2l9.3 7.1a1 1 0 0 0 1.2 0l9.3-7.1v.3a1 1 0 0 1-.4.8l-9.3 7.1a3 3 0 0 1-3.6 0L2.2 7.3a1 1 0 0 1-.4-.8v-.3z"/>
+</svg>
+      EMAIL
+    </h4>
+    <p class="text-sm text-gray-600">sandeeprenu1430&#64;gmail.com</p>
+  </div>
+
+  <!-- Phone Box -->
+  <div class="border rounded-lg p-6 shadow-sm">
+    <h4 class="font-semibold text-lg mb-1 flex items-center gap-2">
+     <svg class="w-5 h-5" fill="#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.654 1.328a1.745 1.745 0 0 1 2.455.127l2.163 2.396a1.75 1.75 0 0 1-.223 2.512l-1.232.987a.678.678 0 0 0-.146.891 11.058 11.058 0 0 0 6.168 5.237.678.678 0 0 0 .893-.333l.5-1.08a1.75 1.75 0 0 1 2.41-.825l2.473 1.24a1.75 1.75 0 0 1 .89 2.184l-.527 1.518a2.746 2.746 0 0 1-3.068 1.75c-7.259-1.123-12.294-6.158-13.417-13.417a2.746 2.746 0 0 1 1.75-3.068l1.518-.527z"/>
+</svg>
+      CONTACT
+    </h4>
+    <p class="text-sm text-gray-600">+91-7013063905</p>
+  </div>
+
+  <!-- LinkedIn Box -->
+  <div class="border rounded-lg p-6 shadow-sm">
+    <h4 class="font-semibold text-lg mb-1 flex items-center gap-2">
+    <svg class="w-5 h-5" style="color: #0A66C2;" fill="currentColor" viewBox="0 0 24 24"
+     xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 7h4V23h-4V7zM7.5 7h3.8v2.1h.05c.52-.98 1.8-2.1 3.7-2.1 3.95 0 4.68 2.6 4.68 6v10h-4v-8.7c0-2.07-.04-4.75-2.9-4.75s-3.35 2.25-3.35 4.6V23h-4V7z" />
+</svg>
+      LINKEDIN
+    </h4>
+    <p class="text-sm text-gray-600"><a href="https://linkedin.com/in/your-profile" target="_blank">https://www.linkedin.com/in/sandeep-renu-a7b4a1153/</a></p>
+  </div>
+
+  <!-- GitHub Box -->
+  <div class="border rounded-lg p-6 shadow-sm">
+    <h4 class="font-semibold text-lg mb-1 flex items-center gap-2">
+     <svg class="w-5 h-5" fill="#181717" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 0a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.6 1.1 1.6 1.1 1 .1 1.6-.7 2-.9a4.4 4.4 0 0 1 1.2-2.8c-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.4.1-3 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C17 2.9 18 3.2 18 3.2c.6 1.6.2 2.7.1 3 .8.8 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7a4.9 4.9 0 0 1 1.4 3.7v5.5c0 .3.2.7.8.6A12 12 0 0 0 12 0z"/>
+</svg>
+      GITHUB
+    </h4>
+    <p class="text-sm text-gray-600"><a href="https://github.com/your-username" target="_blank">https://github.com/sandyrenu</a></p>
+  </div>
+</div>
+
+
+    <!-- Contact Form -->
+    <div>
+      <form (submit)="submitForm()" class="space-y-4 border rounded-lg p-6 shadow-sm">
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" [(ngModel)]="formData.name" name="name"
+            class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" [(ngModel)]="formData.email" name="email"
+            class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea rows="4" [(ngModel)]="formData.message" name="message"
+            class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black" required></textarea>
+        </div>
+        <button type="submit"
+          class="bg-black text-white px-4 py-2 rounded w-full hover:bg-gray-900 transition-all" (onclick)="submitForm()">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section id="projects" class="min-h-screen px-6 md:px-20 py-20 bg-white text-gray-800">
+  <!-- Section Title -->
+  <div class="mb-8">
+    <button class="bg-black text-white px-4 py-1 rounded text-sm">PROJECTS</button>
+  </div>
+
+  <div class="space-y-4">
+    <div *ngFor="let item of accordionItems; let i = index">
+      <div class="border rounded">
+        <button
+          (click)="toggleAccordion(i)"
+          class="w-full flex justify-between items-center px-6 py-4 bg-gray-100 text-left font-medium text-lg focus:outline-none"
+        >
+          {{ item.title }}
+          <span class="text-xl font-bold">
+            {{ item.open ? '−' : '+' }}
+          </span>
+        </button>
+        <div *ngIf="item.open" class="px-6 py-4 text-sm text-gray-600 bg-white">
+          {{ item.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
